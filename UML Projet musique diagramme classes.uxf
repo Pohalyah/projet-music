@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>369</x>
+      <y>351</y>
+      <w>189</w>
+      <h>153</h>
+    </coordinates>
+    <panel_attributes>Utilisateur
+--
+id int
+nom String
+prenom String
+email String
+motdepasse String
+photodeprofil String
+--
+modifierProfil()
+supprimerCompte()
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>891</x>
+      <y>342</y>
+      <w>189</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Ensemble
+--
+id int
+nom String
+description String
+datecreation Date
+--
+creerEnsemble()
+modifierEnsemble()
+supprimerEnsemble()
+ajouterMembre()
+retirerMembre()
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1179</x>
+      <y>342</y>
+      <w>189</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>Morceau
+--
+id int
+titre String
+compositeur String
+genre String
+description String
+--
+creerMorceau()
+modifierMorceau()
+supprimerMorceau()
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1179</x>
+      <y>585</y>
+      <w>189</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>Document
+--
+id int
+nom String
+dateajout Date
+type ENUM
+url String
+--
+creerDocument()
+supprimerDocument()
+telechargerDocument()
+consulterDocument()
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1179</x>
+      <y>837</y>
+      <w>189</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Instrument
+--
+id int
+nom String
+--
+
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>612</x>
+      <y>54</y>
+      <w>189</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>Invitation
+--
+id int
+email String
+dateenvoi Date
+statut ENUM
+--
+creerInvitation()
+accepterInvitation()
+refuserInvitation()
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>630</x>
+      <y>369</y>
+      <w>189</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>MembreEnsemble
+--
+id int
+role ENUM
+dateentree Date
+--
+modifierRole()
+--
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>549</x>
+      <y>396</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>495</y>
+      <w>27</w>
+      <h>108</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>810</x>
+      <y>396</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;90.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1071</x>
+      <y>396</y>
+      <w>126</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;20.0;120.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1260</x>
+      <y>756</y>
+      <w>27</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;90.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>450</x>
+      <y>162</y>
+      <w>270</w>
+      <h>207</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;210.0;280.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>693</x>
+      <y>162</y>
+      <w>315</w>
+      <h>198</h>
+    </coordinates>
+    <panel_attributes/>
+    <additional_attributes>10.0;10.0;330.0;200.0</additional_attributes>
+  </element>
+</diagram>
